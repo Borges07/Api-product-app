@@ -1,73 +1,54 @@
-# React + TypeScript + Vite
+# 🧩 API Back Product
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+API desenvolvida em **Spring Boot** para gerenciar produtos de forma simples e organizada.  
+Ela faz parte do projeto **Produto App**, que inclui um frontend em React integrado a este backend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📚 Descrição da aplicação
 
-## React Compiler
+A **API Back Product** fornece endpoints para:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔹 Criar, listar, atualizar e deletar produtos.
+- 🔹 Gerenciar autenticação de usuário.
+- 🔹 Realizar login com validação via email e senha.
 
-## Expanding the ESLint configuration
+A API foi construída com foco em **clareza, boas práticas e integração limpa com o frontend React**.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ⚙️ Tecnologias utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- ☕ **Java 17+**
+- 🧱 **Spring Boot**
+- 🗄️ **PostgreSQL**
+- 🔒 **Spring Security**
+- 🌐 **JPA / Hibernate**
+- 🧰 **Maven**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Como rodar o projeto localmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### ✅ Pré-requisitos
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Java 17+ instalado
+- Maven instalado
+- PostgreSQL configurado e rodando
+- (Opcional) IntelliJ ou VS Code com suporte a Java
+
+---
+
+### 🧩 Passos para executar
+
+1. **Clone o repositório:**
+
+   ```bash
+   git clone https://github.com/Borges07/api-back-product.git
+   cd api-back-product
+
+   ```
+
+1. acesso para login
+   "email": "avaliador@teste.com",
+   "password": "123456",
